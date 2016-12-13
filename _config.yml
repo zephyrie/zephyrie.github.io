@@ -16,6 +16,9 @@ author:
   name:           'Jourdan Trudeau'
   url:            https://www.jourdantrudeau.com
 
+paginate:         5
+paginate_path:    '/blog/page:num/'
+
 # Custom vars
 version:          2.1.0
 gems: [jekyll-paginate]
