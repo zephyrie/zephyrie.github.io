@@ -1,39 +1,39 @@
-# Dependencies
-markdown:         kramdown
-highlighter:      rouge
-
-# Permalinks
-permalink:        pretty
-
-# Setup
-title:            Ms. Trudeau
-tagline:          'Come in, sit down, have a cup of tea and follow along'
-description:      'Come in, sit down, have a cup of tea and follow along'
-url:              http://zephyrie.github.io
-baseurl:          /
+# Site settings
+title: Jekyll-Uno
+description: 'Jekyll-Uno - a minimal, responsive theme for Jekyll'
+url: 'http://joshgerdes.com/jekyll-uno'
+baseurl: '/jekyll-uno/'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
 
 author:
-  name:           'Jourdan Trudeau'
-  url:            https://www.jourdantrudeau.com
+  name: 'Josh Gerdes'
+  email: josh@joshgerdes.com
+  twitter_username: joshgerdes
+  facebook_username: joshgerdes
+  github_username:  joshgerdes
+  linkedin_username:  joshgerdes
 
-paginate:         5
-paginate_path:    '/blog/page:num/'
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
 
-# Custom vars
-version:          2.1.0
-gems: [jekyll-paginate]
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
 
-github:
-  repo:           https://github.com/zephyrie/zephyrie.github.io
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
 
-prose:
-  siteurl: zephyrie.github.io
-  media: 'media'
-  ignore:
-    - /atom.xml
-    - /LICENSE.md
-    - /.travis.yml
-    - /.gitignore
-    - /deploy.sh
-    - /deploy_key.enc
-    - /Gemfile
+gems: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
