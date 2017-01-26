@@ -1,0 +1,13 @@
+---
+title: zephyrie
+timezone: America/Los_Angeles
+collections:
+  people:
+    title: People
+    output: true
+  posts:
+    title: Posts
+    output: true
+  uploads:
+    title: Uploads
+    output: true
