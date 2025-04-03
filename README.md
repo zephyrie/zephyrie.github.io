@@ -1,4 +1,4 @@
-# Michael Zephyr's Portfolio
+# Michael Zephyr's Personal Website
 
 This is my personal portfolio website showcasing my work as a Technical Product Manager and Developer Evangelist, with a focus on medical AI and healthcare technology.
 
@@ -50,22 +50,6 @@ I'm a Technical Product Manager & Developer Evangelist at NVIDIA Healthcare, lea
    ```bash
    npm run preview
    ```
-
-## Deployment
-
-The site automatically deploys to GitHub Pages when changes are pushed to the main branch. The GitHub Actions workflow handles building and deploying the site.
-
-### Manual Deployment (if needed)
-```bash
-npm run build
-git add .
-git commit -m "Your commit message"
-git push
-```
-
-## License
-
-© 2024 Michael Zephyr. All rights reserved.
 
 ## Contact
 
