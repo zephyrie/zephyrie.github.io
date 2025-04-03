@@ -1,0 +1,19 @@
+{
+  "name": "zephyrie.github.io",
+  "version": "1.0.0",
+  "description": "Personal portfolio website",
+  "scripts": {
+    "dev": "tailwindcss -i src/styles.css -o public/styles.css --watch",
+    "build": "tailwindcss -i src/styles.css -o public/styles.css --minify",
+    "preview": "serve public"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^6.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "postcss": "^8.4.32",
+    "serve": "^14.2.1",
+    "tailwindcss": "^3.4.0"
+  }
+}
