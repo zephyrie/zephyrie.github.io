@@ -34,11 +34,6 @@ jobs:
       - name: Build CSS
         run: npm run build
 
-      - name: Copy CSS to public
-        run: |
-          mkdir -p public
-          cp src/styles.css public/styles.css
-
       - name: Setup Pages
         uses: actions/configure-pages@v4
 

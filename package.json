@@ -3,15 +3,16 @@
   "version": "1.0.0",
   "description": "Personal portfolio website",
   "scripts": {
-    "dev": "tailwindcss -i src/styles.css -o public/styles.css --watch",
-    "build": "tailwindcss -i src/styles.css -o public/styles.css --minify",
-    "preview": "serve public"
+    "dev": "concurrently \"tailwindcss -i src/styles.css -o styles.css --watch\" \"serve .\"",
+    "build": "tailwindcss -i src/styles.css -o styles.css --minify",
+    "preview": "serve ."
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.0.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
     "postcss": "^8.4.32",
     "serve": "^14.2.1",
     "tailwindcss": "^3.4.0"
