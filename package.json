@@ -4,6 +4,8 @@
   "description": "Personal portfolio website",
   "scripts": {
     "dev": "concurrently \"tailwindcss -i src/styles.css -o styles.css --watch\" \"serve .\"",
+    "favicons": "npx sharp -i mz-logo.svg -o favicon-16x16.png resize 16 16 && npx sharp -i mz-logo.svg -o favicon-32x32.png resize 32 32 && npx sharp -i mz-logo.svg -o favicon.ico resize 32 32 && npx sharp -i mz-logo.svg -o apple-touch-icon.png resize 180 180 && npx sharp -i mz-logo.svg -o android-chrome-192x192.png resize 192 192 && npx sharp -i mz-logo.svg -o android-chrome-512x512.png resize 512 512",
+    "prebuild": "npm run favicons",
     "build": "tailwindcss -i src/styles.css -o styles.css --minify",
     "preview": "serve ."
   },
@@ -15,6 +17,7 @@
     "concurrently": "^8.2.2",
     "postcss": "^8.4.32",
     "serve": "^14.2.1",
+    "sharp-cli": "^4.1.1",
     "tailwindcss": "^3.4.0"
   }
 }
