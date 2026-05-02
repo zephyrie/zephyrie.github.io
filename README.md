@@ -1,57 +1,34 @@
-# Michael Zephyr's Personal Website
+# zephyrie.com
 
-This is my personal portfolio website showcasing my work as a Technical Product Manager and Developer Evangelist, with a focus on medical AI and healthcare technology.
+Personal site for **Michael Zephyr** — Technical Marketing Engineer Manager at NVIDIA Healthcare. Leads developer engagement and technical strategy across Holoscan, Isaac for Healthcare, MONAI, and the broader medical-AI portfolio (digital twins for hospitals, Cosmos, VSS).
 
-## About Me
+## Stack
 
-I'm a Technical Product Manager & Developer Evangelist at NVIDIA Healthcare, leading the development of NVIDIA MONAI, an enterprise-grade platform for medical imaging AI. With a background in both software engineering and developer relations, I bridge the gap between complex technical solutions and their practical applications in healthcare.
+Static HTML + hand-written CSS. No build step, no framework, no JS runtime.
 
-### Key Achievements
-- Led MONAI community growth to over 4.5M+ downloads
-- Created technical content reaching 171K+ YouTube views (12.2K hours watched)
-- Established developer education programs reaching 6K+ developers
-- Co-authored foundational papers in medical AI and healthcare technology
+- `index.html` — the page
+- `styles.css` — design tokens, layout, type system
+- `assets/images/profile.jpg` — portrait
+- Type: **Antonio** (display) + **Geist Mono** (body) via Google Fonts
+- Theming: `light-dark()` + `prefers-color-scheme`, with `forced-colors` fallback
+- Hosting: GitHub Pages (custom domain via `CNAME`)
 
-## Website Features
+## Local dev
 
-- 8-bit themed design with medical and AI elements
-- Responsive layout optimized for all devices
-- Dark mode by default for better readability
-- Interactive elements with subtle animations
-- Sections for experience, leadership roles, and publications
+```bash
+npm install
+npm run dev
+```
 
-## Technical Stack
+Serves at `http://0.0.0.0:3000` so you can review on any device on your LAN.
 
-- HTML5
-- Tailwind CSS for styling
-- Font Awesome for icons
-- GitHub Pages for hosting
+To regenerate favicons from `mz-logo.svg`:
 
-## Local Development
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/zephyrie/zephyrie.github.io.git
-   cd zephyrie.github.io
-   ```
-
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
-
-3. **Start development server**
-   ```bash
-   npm run dev
-   ```
-   This will start the development server and watch for CSS changes.
-
-4. **Preview the build**
-   ```bash
-   npm run preview
-   ```
+```bash
+npm run favicons
+```
 
 ## Contact
 
 - GitHub: [@zephyrie](https://github.com/zephyrie)
-- LinkedIn: [Profile](https://linkedin.com/in/michaelzephyr)
+- LinkedIn: [michaelzephyr](https://linkedin.com/in/michaelzephyr)
