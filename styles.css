@@ -511,7 +511,6 @@ a:focus-visible {
   color: var(--accent);
   font-weight: 600;
 }
-.job.compact .job-body h3 { font-size: 1.25rem; }
 
 /* inline numeric callouts inside bullets */
 .job-body .metric {
